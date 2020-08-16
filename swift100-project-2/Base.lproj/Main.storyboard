@@ -18,19 +18,36 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pxl-1T-ddh">
                                 <rect key="frame" x="107" y="100" width="200" height="100"/>
                                 <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iOH-bH-CKe"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aox-kH-5xP">
-                                <rect key="frame" x="107" y="360" width="200" height="100"/>
-                                <state key="normal" image="us"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ZM-iy-Fpg">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ZM-iy-Fpg">
                                 <rect key="frame" x="107" y="230" width="200" height="100"/>
                                 <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NEq-gK-Za4"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aox-kH-5xP">
+                                <rect key="frame" x="107" y="360" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hqi-ER-Iig"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jX-yC-ySc">
+                                <rect key="frame" x="341" y="100" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="aox-kH-5xP" firstAttribute="top" secondItem="6ZM-iy-Fpg" secondAttribute="bottom" constant="30" id="0UK-SD-Oxx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4jX-yC-ySc" secondAttribute="trailing" constant="20" id="9oO-8d-eXD"/>
+                            <constraint firstItem="4jX-yC-ySc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="CyG-GK-HK3"/>
                             <constraint firstItem="Pxl-1T-ddh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="Ov7-Me-vJu"/>
                             <constraint firstItem="aox-kH-5xP" firstAttribute="centerX" secondItem="6ZM-iy-Fpg" secondAttribute="centerX" id="bZv-6E-teb"/>
                             <constraint firstItem="6ZM-iy-Fpg" firstAttribute="top" secondItem="Pxl-1T-ddh" secondAttribute="bottom" constant="30" id="m1B-gV-Hif"/>
@@ -44,6 +61,7 @@
                         <outlet property="Button1" destination="Pxl-1T-ddh" id="ylN-5j-DhH"/>
                         <outlet property="Button2" destination="6ZM-iy-Fpg" id="1dp-KF-7JP"/>
                         <outlet property="Button3" destination="aox-kH-5xP" id="cAS-3I-qgv"/>
+                        <outlet property="scoreLabel" destination="4jX-yC-ySc" id="lJp-Q7-UgC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
